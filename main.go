@@ -8,17 +8,13 @@ import (
 	"handle"
 	"log"
 	"net/http"
-	"github.com/gorilla/mux"
 )
 
 func main() {
-
 	conf := config.LoadConfig("/etc/finance-ui/config.json")
-	r := mux.NewRouter()
-	r.HandleFunc("/api/v1/{key}", handle.Api).Methods("GET")
-	r.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir(conf.StaticFilePath)))).Methods("GET")
-	r.NotFoundHandler = http.HandlerFunc(handle.Page404)
-
+	r := http.NewServeMux()
+	r.HandleFunc("/api/v1/info", handle.Api)
+	r.Handle("/", http.StripPrefix("/", http.FileServer(http.Dir("/Users/devendra/personal/finance-ui/static"))))
 	store, err := memstore.New(65536)
 	if err != nil {
 		log.Fatal(err)

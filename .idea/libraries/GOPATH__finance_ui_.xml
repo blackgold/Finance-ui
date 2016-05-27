@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;finance-ui&gt;">
+    <CLASSES>
+      <root url="file://$USER_HOME$/go/src/httputil" />
+      <root url="file://$USER_HOME$/go/src/friends" />
+      <root url="file://$USER_HOME$/go/src/listenup" />
+      <root url="file://$USER_HOME$/go/src/github.com" />
+      <root url="file://$USER_HOME$/go/src/plays" />
+      <root url="file://$USER_HOME$/go/src/golang.org" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <excluded>
+      <root url="file://$USER_HOME$/go/src/github.com/launchdarkly/go-client/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/launchdarkly/eventsource/.git" />
+      <root url="file://$USER_HOME$/go/src/golang.org/x/exp/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/launchdarkly/go-client/Godeps/_workspace" />
+      <root url="file://$PROJECT_DIR$" />
+      <root url="file://$USER_HOME$/go/src/github.com/gin-gonic/contrib/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/golang/example/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/facebookgo/httpcontrol/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/gregjones/httpcache/.git" />
+    </excluded>
+  </library>
+</component>
