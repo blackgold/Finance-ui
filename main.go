@@ -13,7 +13,8 @@ import (
 func main() {
 	conf := config.LoadConfig("/etc/finance-ui/config.json")
 	r := http.NewServeMux()
-	r.HandleFunc("/api/v1/info", handle.Api)
+	r.HandleFunc("/api/v1/sma200", handle.ApiSma200)
+	r.HandleFunc("/api/v1/ema50", handle.ApiEma50)
 	r.Handle("/", http.StripPrefix("/", http.FileServer(http.Dir("/Users/devendra/personal/finance-ui/static"))))
 	store, err := memstore.New(65536)
 	if err != nil {

@@ -11,6 +11,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
+    <script src="http://requirejs.org/docs/release/2.2.0/minified/require.js"></script>
+    <script src="../scripts/rjt.js"></script>
+    <script type="text/babel" src="scripts/example.js"></script>
+
   </head>
   <body>
 
@@ -20,18 +24,7 @@
       </header>
   </div>
 
-    <div class="left" id="content"></div>
-    <script type="text/babel" src="scripts/example.js"></script>
-    <table id="table" class="hidden">
-      <tr>
-        <th>50 Day moving average UP</th>
-        <th>50 Day moving average DOWN</th>
-      </tr>
-    </table>
-    <script type="text/babel">
-      // To get started with this tutorial running your own code, simply remove
-      // the script tag loading scripts/example.js and start writing code here.
-    </script>
+    <div class="left" id="app"></div>
 
   <footer class="footer">
     <div class="container">
