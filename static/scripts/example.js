@@ -52,8 +52,7 @@ var Result = React.createClass({
             });
         return(
             <div className="row">
-                <br></br>
-                <h4>  Stocks Breaking 200 day simple moving average</h4>
+                <h4 align="left">Stocks Breaking 200 day simple moving average</h4>
                 <br></br>
                 <div className="col-md-12">
                     <table className="table table-bordered">

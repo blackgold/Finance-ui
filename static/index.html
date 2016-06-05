@@ -10,9 +10,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
-    <script src="http://requirejs.org/docs/release/2.2.0/minified/require.js"></script>
-    <script src="../scripts/rjt.js"></script>
     <script type="text/babel" src="scripts/example.js"></script>
 
   </head>
@@ -24,7 +21,14 @@
       </header>
   </div>
 
-    <div class="left" id="app"></div>
+  <div class="left">
+    <div align="right">
+      <input type="image" id="left" src="images/left.png" height="20" width="20" />
+      <input type="image" id="right" src="images/right.png" height="20" width="20" />
+    </div>
+    <div id="app"></div>
+  </div>
+
 
   <footer class="footer">
     <div class="container">
